@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2021-10-08 19:49:55">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Move to to global default</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>7cfa5682db077c10359af8f33996198f</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>llapid</sys_created_by>
+<sys_created_on>2021-10-08 19:49:55</sys_created_on>
+<sys_id>c135e24adb477c10359af8f339961990</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>llapid</sys_updated_by>
+<sys_updated_on>2021-10-08 19:49:55</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_role_11ba5242db077c10359af8f339961940</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role"><sys_ui_action_role action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_role</sys_class_name><sys_created_by>llapid</sys_created_by><sys_created_on>2021-10-08 19:32:50</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>11ba5242db077c10359af8f339961940</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.admin</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Global">global</sys_scope><sys_ui_action display_value="">d4ba9e42db077c10359af8f339961943</sys_ui_action><sys_update_name>sys_ui_action_role_11ba5242db077c10359af8f339961940</sys_update_name><sys_updated_by>llapid</sys_updated_by><sys_updated_on>2021-10-08 19:32:50</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_ui_action_role></record_update>]]></payload>
+<payload_hash>-1375036125</payload_hash>
+<remote_update_set display_value="Move to to global default">c135e24adb477c10359af8f339961990</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>llapid</sys_created_by>
+<sys_created_on>2021-10-08 19:49:55</sys_created_on>
+<sys_id>0135e24adb477c10359af8f339961991</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17c6164d6c80000001</sys_recorded_at>
+<sys_updated_by>llapid</sys_updated_by>
+<sys_updated_on>2021-10-08 19:49:55</sys_updated_on>
+<table/>
+<target_name>.admin</target_name>
+<type>UI Action Role</type>
+<update_domain>global</update_domain>
+<update_guid>4b41e68efd077c1087c0020c4804cca9</update_guid>
+<update_guid_history>4b41e68efd077c1087c0020c4804cca9:-1375036125</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_d4ba9e42db077c10359af8f339961943</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;current.update_set.is_default != 'false' &amp;amp;&amp;amp; current.update_set.application == 'global'&lt;/condition&gt;&lt;form_action&gt;false&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;true&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;true&lt;/list_choice&gt;&lt;list_context_menu&gt;true&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Move to Default&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[// identify the correct global default update set 
+var setGr = new GlideRecord('sys_update_set');
+setGr.addQuery('application=global^is_default=true');
+setGr.query();
+var defaultSet = '';
+while(setGr.next()){
+	defaultSet = setGr.getUniqueValue();
+};
+
+// Update the customer updates by updating update set value to the global default one 
+current.update_set = defaultSet; 
+current.update();]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;llapid&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-10-08 19:32:51&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d4ba9e42db077c10359af8f339961943&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Move to Default&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_d4ba9e42db077c10359af8f339961943&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;llapid&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-10-08 19:33:26&lt;/sys_updated_on&gt;&lt;table&gt;sys_update_xml&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-516130083</payload_hash>
+<remote_update_set display_value="Move to to global default">c135e24adb477c10359af8f339961990</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>llapid</sys_created_by>
+<sys_created_on>2021-10-08 19:49:55</sys_created_on>
+<sys_id>4935e24adb477c10359af8f339961990</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17c616562d10000001</sys_recorded_at>
+<sys_updated_by>llapid</sys_updated_by>
+<sys_updated_on>2021-10-08 19:49:55</sys_updated_on>
+<table>sys_update_xml</table>
+<target_name>Move to Default</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>3b616e8e0e077c10954e5870ecfc32f8</update_guid>
+<update_guid_history>3b616e8e0e077c10954e5870ecfc32f8:-516130083,4b41e68ea1077c100e387e647dceb4ae:-983009438</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
